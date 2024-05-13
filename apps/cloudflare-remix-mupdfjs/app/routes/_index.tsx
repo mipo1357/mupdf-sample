@@ -2,17 +2,18 @@ import type { MetaFunction } from "@remix-run/cloudflare";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "PDF Viewer" },
     {
       name: "description",
-      content: "Welcome to Remix! Using Vite and Cloudflare!",
+      content: "Sample viewer for pdf using the mupdfjs package",
     },
   ];
 };
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <h1>Welcome to Remix (with Vite and Cloudflare)</h1>
       <ul>
         <li>
